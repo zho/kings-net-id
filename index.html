@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kings Network Indonesia — Connection Matters.</title>
+<meta name="description" content="PT. Kings Network Indonesia — Internet connectivity and network infrastructure for homes, businesses, and organizations across Jakarta and Java.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="bg-field"></div>
+
+<!-- ========================= NAV ========================= -->
+<nav class="navbar" id="navbar">
+  <a href="#home" class="nav-logo">
+    <img src="assets/logo.png" alt="Kings Network Indonesia logo">
+    <span class="nav-logo-text">KINGS NETWORK<span>Indonesia</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#network">Network</a></li>
+    <li><a href="#coverage">Coverage</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="#contact" class="btn btn-ghost">Get Connected <span class="btn-arrow">→</span></a>
+  </div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="nav-mobile">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#network">Network</a>
+  <a href="#coverage">Coverage</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="btn btn-primary" style="margin-top:10px;">Get Connected →</a>
+</div>
+
+<!-- ========================= HERO ========================= -->
+<section class="hero" id="home">
+  <div class="hero-grid">
+    <div class="hero-copy reveal">
+      <div class="hero-kicker">POWERING CONNECTIVITY ACROSS <b>JAVA</b></div>
+      <h1>Connection Matters.<br><em class="grad-text">Powering Your Future.</em></h1>
+      <p class="lead hero-lead">Reliable internet connectivity and network infrastructure for homes, businesses, and organizations across Jakarta and Java.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get Connected <span class="btn-arrow">→</span></a>
+        <a href="#network" class="btn btn-ghost">Explore Our Network</a>
+      </div>
+      <div class="hero-flowline">
+        <span class="node">Internet</span><span class="sep">/</span>
+        <span class="node active">Kings Network</span><span class="sep">/</span>
+        <span class="node">Jakarta Core</span><span class="sep">/</span>
+        <span class="node">Java Network</span><span class="sep">/</span>
+        <span class="node">Customers</span>
+      </div>
+    </div>
+    <div class="hero-stage" id="hero-stage">
+      <div class="hero-stage-fallback" id="hero-fallback" hidden>3D preview unavailable — your browser or device doesn't support WebGL.</div>
+      <div class="node-tooltip" id="hero-tooltip"><b id="hero-tooltip-name"></b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= ABOUT ========================= -->
+<section class="section" id="about">
+  <div class="about-grid">
+    <div class="reveal">
+      <div class="eyebrow">About Kings Network</div>
+      <h2>Built for Java.<br>Connected to the world.</h2>
+      <p class="lead" style="margin-top:20px;">PT. Kings Network Indonesia is an internet service provider and network infrastructure company serving Jakarta and Java. We design, operate, and support connectivity that homes, businesses, and organizations can build on.</p>
+      <ul class="about-focus-list">
+        <li>Internet &amp; fiber connectivity</li>
+        <li>Business and dedicated internet</li>
+        <li>Enterprise networking</li>
+        <li>Network infrastructure &amp; technical support</li>
+      </ul>
+      <p class="about-note">Coverage, capacity, and service availability shown on this site use placeholder and demo values pending confirmation from Kings Network Indonesia.</p>
+    </div>
+    <div class="reveal">
+      <div class="stat-strip">
+        <div class="stat-cell"><div class="num">JKT</div><div class="lab">Primary network hub</div></div>
+        <div class="stat-cell"><div class="num">JAWA</div><div class="lab">Current service island</div></div>
+        <div class="stat-cell"><div class="num">24/7</div><div class="lab">Technical support</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ========================= SERVICES ========================= -->
+<section class="section" id="services">
+  <div class="section-head reveal">
+    <div class="eyebrow">Services</div>
+    <h2>Connectivity for every scale.</h2>
+  </div>
+  <div class="services-grid" id="services-grid">
+    <!-- cards injected identically in markup for no-js resilience -->
+    <div class="service-card reveal">
+      <div class="idx">01</div>
+      <h3>Home Internet</h3>
+      <p>Fast and reliable connectivity for households.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="idx">02</div>
+      <h3>Business Internet</h3>
+      <p>Reliable connectivity designed for growing businesses.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="idx">03</div>
+      <h3>Dedicated Internet</h3>
+      <p>Dedicated bandwidth for mission-critical operations.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="idx">04</div>
+      <h3>Enterprise Networking</h3>
+      <p>Scalable network infrastructure for organizations.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="idx">05</div>
+      <h3>Fiber Optic Connectivity</h3>
+      <p>High-speed fiber-based connectivity.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="idx">06</div>
+      <h3>Managed Network</h3>
+      <p>Professional network monitoring, management, and maintenance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= NETWORK INFRASTRUCTURE ========================= -->
+<section class="section section-alt" id="network">
+  <div class="infra-wrap">
+    <div class="reveal">
+      <div class="eyebrow">Network Infrastructure</div>
+      <h2>Engineered for reliable connectivity.</h2>
+      <p class="lead" style="margin-top:18px;">Our network infrastructure is designed to provide stable, scalable, and high-performance connectivity across Jakarta and Java.</p>
+    </div>
+    <div class="infra-diagram reveal" id="infra-diagram"></div>
+  </div>
+</section>
+
+<!-- ========================= BUSINESS SOLUTIONS ========================= -->
+<section class="section" id="business">
+  <div class="biz-wrap">
+    <div class="biz-diagram reveal" id="biz-diagram"></div>
+    <div class="reveal">
+      <div class="eyebrow">Business Solutions</div>
+      <h2>Keep your business connected.</h2>
+      <ul class="biz-list">
+        <li>Dedicated Internet Access</li>
+        <li>Static IP</li>
+        <li>Enterprise Connectivity</li>
+        <li>Site-to-Site Connectivity</li>
+        <li>Network Monitoring</li>
+        <li>Managed Network Services</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">Talk to Our Network Team <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= COVERAGE ========================= -->
+<section class="coverage-section section-alt" id="coverage">
+  <div class="coverage-head">
+    <div class="reveal">
+      <div class="eyebrow">Network Coverage</div>
+      <h2>Jakarta at the core.<br>Java in reach.</h2>
+    </div>
+    <p class="lead reveal">Rotate and click regions to see status. Coverage is limited to Jakarta and Java Island — figures shown are placeholders pending confirmed data.</p>
+  </div>
+  <div class="coverage-stage-wrap reveal">
+    <div class="coverage-stage" id="coverage-stage">
+      <div class="coverage-hint">Drag to rotate · Scroll to zoom · Click a node</div>
+
+      <div class="coverage-panel">
+        <h4>Network Coverage</h4>
+        <div class="coverage-row"><span><span class="dot"></span>Jakarta</span><span class="val">Connected</span></div>
+        <div class="coverage-row"><span><span class="dot"></span>Java Island</span><span class="val">Network Area</span></div>
+        <div class="divider-mini"></div>
+        <div class="coverage-stat"><span>Network Nodes</span><b id="stat-nodes">—</b></div>
+        <div class="coverage-stat"><span>Fiber Routes</span><b id="stat-fiber">— km</b></div>
+      </div>
+
+      <div class="region-detail" id="region-detail">
+        <button class="rclose" id="region-close" aria-label="Close">✕</button>
+        <span class="rname" id="region-name">—</span>
+        <span class="rstatus" id="region-status">—</span>
+        <ul class="rservices" id="region-services"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= WHY KINGS ========================= -->
+<section class="section" id="why">
+  <div class="section-head reveal">
+    <div class="eyebrow">Why Kings Network</div>
+    <h2>Built around your connectivity needs.</h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-cell reveal"><div class="wnum">01</div><h3>Reliable Connectivity</h3><p>Consistent uptime designed for daily dependence, not just peak hours.</p></div>
+    <div class="why-cell reveal"><div class="wnum">02</div><h3>High-Speed Infrastructure</h3><p>Fiber-based architecture built for demanding, data-heavy workloads.</p></div>
+    <div class="why-cell reveal"><div class="wnum">03</div><h3>Scalable Solutions</h3><p>Network capacity that grows alongside your household or business.</p></div>
+    <div class="why-cell reveal"><div class="wnum">04</div><h3>Professional Network Operations</h3><p>Infrastructure monitored and maintained by a dedicated technical team.</p></div>
+    <div class="why-cell reveal"><div class="wnum">05</div><h3>24/7 Technical Support</h3><p>Support available around the clock when connectivity matters most.</p></div>
+    <div class="why-cell reveal"><div class="wnum">06</div><h3>Java-Focused Network</h3><p>Infrastructure purpose-built around Jakarta and Java, not spread thin.</p></div>
+  </div>
+</section>
+
+<!-- ========================= CTA — convergence ========================= -->
+<section class="cta-section" id="cta">
+  <div class="cta-stage" id="cta-stage"></div>
+  <div class="cta-content reveal">
+    <div class="eyebrow" style="justify-content:center;">Get Started</div>
+    <h2 style="margin-top:18px;">Ready to build a better connection?</h2>
+    <p class="lead" style="margin-top:16px;">Talk to Kings Network Indonesia and find the connectivity solution that fits your needs.</p>
+    <div class="cta-actions">
+      <a href="#contact" class="btn btn-primary">Request a Quote <span class="btn-arrow">→</span></a>
+      <a href="#contact" class="btn btn-ghost">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= CONTACT ========================= -->
+<section class="section" id="contact">
+  <div class="contact-wrap">
+    <div class="reveal">
+      <div class="eyebrow">Contact</div>
+      <h2 style="margin-bottom:28px;">Let's get you connected.</h2>
+      <form class="contact-form" id="contact-form">
+        <div class="form-grid">
+          <div class="form-field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" placeholder="Your full name" required></div>
+          <div class="form-field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" placeholder="Company name (optional)"></div>
+          <div class="form-field"><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" placeholder="+62 8xx xxxx xxxx" required></div>
+          <div class="form-field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" placeholder="you@company.com" required></div>
+          <div class="form-field full">
+            <label for="f-service">Service Needed</label>
+            <select id="f-service" name="service">
+              <option>Home Internet</option>
+              <option>Business Internet</option>
+              <option>Dedicated Internet</option>
+              <option>Enterprise Networking</option>
+              <option>Fiber Optic Connectivity</option>
+              <option>Managed Network</option>
+            </select>
+          </div>
+          <div class="form-field full"><label for="f-message">Message</label><textarea id="f-message" name="message" placeholder="Tell us about your connectivity needs"></textarea></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message <span class="btn-arrow">→</span></button>
+      </form>
+    </div>
+    <div class="reveal">
+      <div class="contact-info">
+        <div class="info-row">
+          <div class="ico">◎</div>
+          <div><div class="lab">Company Address</div><div class="val">[Address placeholder] Jakarta, Indonesia</div></div>
+        </div>
+        <div class="info-row">
+          <div class="ico">☎</div>
+          <div><div class="lab">Phone</div><div class="val">[Phone placeholder]</div></div>
+        </div>
+        <div class="info-row">
+          <div class="ico">✆</div>
+          <div><div class="lab">WhatsApp</div><div class="val">[WhatsApp placeholder]</div></div>
+        </div>
+        <div class="info-row">
+          <div class="ico">✉</div>
+          <div><div class="lab">Email</div><div class="val">[Email placeholder]</div></div>
+        </div>
+        <div class="info-row" style="border-bottom:none;">
+          <div class="ico">◷</div>
+          <div><div class="lab">Business Hours</div><div class="val">[Business hours placeholder]</div></div>
+        </div>
+        <div class="map-placeholder">Google Maps placeholder</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#home" class="nav-logo"><img src="assets/logo.png" alt="Kings Network Indonesia logo"><span class="nav-logo-text">KINGS NETWORK<span>Indonesia</span></span></a>
+      <p>Connection Matters. Powering your future.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h5>Site</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#network">Network</a></li>
+          <li><a href="#coverage">Coverage</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">IN</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> PT. Kings Network Indonesia. All rights reserved.</span>
+    <span>Jakarta &amp; Java Island Network</span>
+  </div>
+</footer>
+
+<script type="module" src="js/coverage-data.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script type="module" src="js/hero-network.js"></script>
+<script type="module" src="js/java-map.js"></script>
+<script type="module" src="js/infrastructure.js"></script>
+<script type="module" src="js/animations.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
