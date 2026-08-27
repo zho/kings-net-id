@@ -1,348 +1,646 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kings Network Indonesia — Connection Matters.</title>
-<meta name="description" content="PT. Kings Network Indonesia — Internet connectivity and network infrastructure for homes, businesses, and organizations across Jakarta and Java.">
+<title>KINGS — Internet Cepat untuk Indonesia</title>
+<meta name="description" content="PT Kings Network Indonesia (KINGS) menghadirkan internet fiber cepat dan stabil untuk rumah, bisnis, dan enterprise di Jakarta dan Bekasi, dengan peta ekspansi ke seluruh Jawa. Termasuk solusi digital IPTV Uniiq System dan KingsDDS.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 
-<script type="importmap">
-{
-  "imports": {
-    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-  }
-}
-</script>
+<link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
 
-<div class="bg-field"></div>
+<a class="skip-link" href="#main">Langsung ke konten utama</a>
 
-<!-- ========================= NAV ========================= -->
-<nav class="navbar" id="navbar">
-  <a href="#home" class="nav-logo">
-    <img src="assets/logo.png" alt="Kings Network Indonesia logo">
-    <span class="nav-logo-text">KINGS NETWORK<span>Indonesia</span></span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#network">Network</a></li>
-    <li><a href="#coverage">Coverage</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="nav-cta">
-    <a href="#contact" class="btn btn-ghost">Get Connected <span class="btn-arrow">→</span></a>
-  </div>
-  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-<div class="nav-mobile" id="nav-mobile">
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#network">Network</a>
-  <a href="#coverage">Coverage</a>
-  <a href="#contact">Contact</a>
-  <a href="#contact" class="btn btn-primary" style="margin-top:10px;">Get Connected →</a>
-</div>
+<!-- ============ NAVIGATION ============ -->
+<header class="nav-wrap" id="navWrap">
+  <nav class="nav container" aria-label="Navigasi utama">
+    <a href="#beranda" class="nav-logo" aria-label="KINGS — Beranda">
+      <img src="assets/images/logo.png" alt="KINGS" width="34" height="34">
+      <span>KINGS</span>
+    </a>
 
-<!-- ========================= HERO ========================= -->
-<section class="hero" id="home">
-  <div class="hero-grid">
-    <div class="hero-copy reveal">
-      <div class="hero-kicker">POWERING CONNECTIVITY ACROSS <b>JAVA</b></div>
-      <h1>Connection Matters.<br><em class="grad-text">Powering Your Future.</em></h1>
-      <p class="lead hero-lead">Reliable internet connectivity and network infrastructure for homes, businesses, and organizations across Jakarta and Java.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Get Connected <span class="btn-arrow">→</span></a>
-        <a href="#network" class="btn btn-ghost">Explore Our Network</a>
-      </div>
-      <div class="hero-flowline">
-        <span class="node">Internet</span><span class="sep">/</span>
-        <span class="node active">Kings Network</span><span class="sep">/</span>
-        <span class="node">Jakarta Core</span><span class="sep">/</span>
-        <span class="node">Java Network</span><span class="sep">/</span>
-        <span class="node">Customers</span>
-      </div>
-    </div>
-    <div class="hero-stage" id="hero-stage">
-      <div class="hero-stage-fallback" id="hero-fallback" hidden>3D preview unavailable — your browser or device doesn't support WebGL.</div>
-      <div class="node-tooltip" id="hero-tooltip"><b id="hero-tooltip-name"></b></div>
-    </div>
-  </div>
-</section>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu navigasi">
+      <span></span><span></span><span></span>
+    </button>
 
-<!-- ========================= ABOUT ========================= -->
-<section class="section" id="about">
-  <div class="about-grid">
-    <div class="reveal">
-      <div class="eyebrow">About Kings Network</div>
-      <h2>Built for Java.<br>Connected to the world.</h2>
-      <p class="lead" style="margin-top:20px;">PT. Kings Network Indonesia is an internet service provider and network infrastructure company serving Jakarta and Java. We design, operate, and support connectivity that homes, businesses, and organizations can build on.</p>
-      <ul class="about-focus-list">
-        <li>Internet &amp; fiber connectivity</li>
-        <li>Business and dedicated internet</li>
-        <li>Enterprise networking</li>
-        <li>Network infrastructure &amp; technical support</li>
+    <div class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="#beranda" class="nav-link">Beranda</a></li>
+        <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+        <li><a href="#layanan" class="nav-link">Layanan Internet</a></li>
+        <li><a href="#solusi" class="nav-link">Solusi Digital</a></li>
+        <li><a href="#cakupan" class="nav-link">Cakupan Area</a></li>
+        <li><a href="#industri" class="nav-link">Industri</a></li>
+        <li><a href="#kontak" class="nav-link">Kontak</a></li>
       </ul>
-      <p class="about-note">Coverage, capacity, and service availability shown on this site use placeholder and demo values pending confirmation from Kings Network Indonesia.</p>
+      <a href="#cakupan" class="btn btn-primary btn-sm nav-cta">Cek Coverage</a>
     </div>
-    <div class="reveal">
-      <div class="stat-strip">
-        <div class="stat-cell"><div class="num">JKT</div><div class="lab">Primary network hub</div></div>
-        <div class="stat-cell"><div class="num">JAWA</div><div class="lab">Current service island</div></div>
-        <div class="stat-cell"><div class="num">24/7</div><div class="lab">Technical support</div></div>
-      </div>
-    </div>
-  </div>
-</section>
+  </nav>
+</header>
 
-<div class="divider"></div>
+<main id="main">
 
-<!-- ========================= SERVICES ========================= -->
-<section class="section" id="services">
-  <div class="section-head reveal">
-    <div class="eyebrow">Services</div>
-    <h2>Connectivity for every scale.</h2>
-  </div>
-  <div class="services-grid" id="services-grid">
-    <!-- cards injected identically in markup for no-js resilience -->
-    <div class="service-card reveal">
-      <div class="idx">01</div>
-      <h3>Home Internet</h3>
-      <p>Fast and reliable connectivity for households.</p>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="beranda">
+    <div class="hero-canvas-wrap" aria-hidden="true">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-canvas-fallback"></div>
     </div>
-    <div class="service-card reveal">
-      <div class="idx">02</div>
-      <h3>Business Internet</h3>
-      <p>Reliable connectivity designed for growing businesses.</p>
-    </div>
-    <div class="service-card reveal">
-      <div class="idx">03</div>
-      <h3>Dedicated Internet</h3>
-      <p>Dedicated bandwidth for mission-critical operations.</p>
-    </div>
-    <div class="service-card reveal">
-      <div class="idx">04</div>
-      <h3>Enterprise Networking</h3>
-      <p>Scalable network infrastructure for organizations.</p>
-    </div>
-    <div class="service-card reveal">
-      <div class="idx">05</div>
-      <h3>Fiber Optic Connectivity</h3>
-      <p>High-speed fiber-based connectivity.</p>
-    </div>
-    <div class="service-card reveal">
-      <div class="idx">06</div>
-      <h3>Managed Network</h3>
-      <p>Professional network monitoring, management, and maintenance.</p>
-    </div>
-  </div>
-</section>
 
-<!-- ========================= NETWORK INFRASTRUCTURE ========================= -->
-<section class="section section-alt" id="network">
-  <div class="infra-wrap">
-    <div class="reveal">
-      <div class="eyebrow">Network Infrastructure</div>
-      <h2>Engineered for reliable connectivity.</h2>
-      <p class="lead" style="margin-top:18px;">Our network infrastructure is designed to provide stable, scalable, and high-performance connectivity across Jakarta and Java.</p>
-    </div>
-    <div class="infra-diagram reveal" id="infra-diagram"></div>
-  </div>
-</section>
+    <div class="container hero-inner">
+      <p class="eyebrow reveal-up"><span class="eyebrow-dot"></span>JARINGAN FIBER · JAKARTA — BEKASI — JAWA</p>
+      <h1 class="hero-title reveal-up" style="--d:1">Internet Cepat untuk Jakarta, Bekasi, dan <span class="text-grad">Indonesia</span></h1>
+      <p class="hero-sub reveal-up" style="--d:2">Konektivitas internet yang stabil, scalable, dan siap mendukung transformasi digital Anda.</p>
 
-<!-- ========================= BUSINESS SOLUTIONS ========================= -->
-<section class="section" id="business">
-  <div class="biz-wrap">
-    <div class="biz-diagram reveal" id="biz-diagram"></div>
-    <div class="reveal">
-      <div class="eyebrow">Business Solutions</div>
-      <h2>Keep your business connected.</h2>
-      <ul class="biz-list">
-        <li>Dedicated Internet Access</li>
-        <li>Static IP</li>
-        <li>Enterprise Connectivity</li>
-        <li>Site-to-Site Connectivity</li>
-        <li>Network Monitoring</li>
-        <li>Managed Network Services</li>
-      </ul>
-      <a href="#contact" class="btn btn-primary">Talk to Our Network Team <span class="btn-arrow">→</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- ========================= COVERAGE ========================= -->
-<section class="coverage-section section-alt" id="coverage">
-  <div class="coverage-head">
-    <div class="reveal">
-      <div class="eyebrow">Network Coverage</div>
-      <h2>Jakarta at the core.<br>Java in reach.</h2>
-    </div>
-    <p class="lead reveal">Rotate and click regions to see status. Coverage is limited to Jakarta and Java Island — figures shown are placeholders pending confirmed data.</p>
-  </div>
-  <div class="coverage-stage-wrap reveal">
-    <div class="coverage-stage" id="coverage-stage">
-      <div class="coverage-hint">Drag to rotate · Scroll to zoom · Click a node</div>
-
-      <div class="coverage-panel">
-        <h4>Network Coverage</h4>
-        <div class="coverage-row"><span><span class="dot"></span>Jakarta</span><span class="val">Connected</span></div>
-        <div class="coverage-row"><span><span class="dot"></span>Java Island</span><span class="val">Network Area</span></div>
-        <div class="divider-mini"></div>
-        <div class="coverage-stat"><span>Network Nodes</span><b id="stat-nodes">—</b></div>
-        <div class="coverage-stat"><span>Fiber Routes</span><b id="stat-fiber">— km</b></div>
+      <div class="hero-ctas reveal-up" style="--d:3">
+        <a href="#cakupan" class="btn btn-primary">Cek Coverage</a>
+        <a href="#kontak" class="btn btn-ghost">Konsultasi dengan Tim Kami</a>
       </div>
 
-      <div class="region-detail" id="region-detail">
-        <button class="rclose" id="region-close" aria-label="Close">✕</button>
-        <span class="rname" id="region-name">—</span>
-        <span class="rstatus" id="region-status">—</span>
-        <ul class="rservices" id="region-services"></ul>
+      <div class="hero-stats reveal-up" style="--d:4">
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="99.9" data-suffix="%">0%</span>
+          <span class="hero-stat-label">Uptime terjamin</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="15" data-suffix=" mnt">0 mnt</span>
+          <span class="hero-stat-label">Rata-rata respons tim lokal</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="2" data-suffix=" Kota">0 Kota</span>
+          <span class="hero-stat-label">Aktif, Jawa menyusul</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ========================= WHY KINGS ========================= -->
-<section class="section" id="why">
-  <div class="section-head reveal">
-    <div class="eyebrow">Why Kings Network</div>
-    <h2>Built around your connectivity needs.</h2>
-  </div>
-  <div class="why-grid">
-    <div class="why-cell reveal"><div class="wnum">01</div><h3>Reliable Connectivity</h3><p>Consistent uptime designed for daily dependence, not just peak hours.</p></div>
-    <div class="why-cell reveal"><div class="wnum">02</div><h3>High-Speed Infrastructure</h3><p>Fiber-based architecture built for demanding, data-heavy workloads.</p></div>
-    <div class="why-cell reveal"><div class="wnum">03</div><h3>Scalable Solutions</h3><p>Network capacity that grows alongside your household or business.</p></div>
-    <div class="why-cell reveal"><div class="wnum">04</div><h3>Professional Network Operations</h3><p>Infrastructure monitored and maintained by a dedicated technical team.</p></div>
-    <div class="why-cell reveal"><div class="wnum">05</div><h3>24/7 Technical Support</h3><p>Support available around the clock when connectivity matters most.</p></div>
-    <div class="why-cell reveal"><div class="wnum">06</div><h3>Java-Focused Network</h3><p>Infrastructure purpose-built around Jakarta and Java, not spread thin.</p></div>
-  </div>
-</section>
+    <div class="hero-scroll-cue" aria-hidden="true">
+      <span></span>
+      <p>Scroll</p>
+    </div>
+  </section>
 
-<!-- ========================= CTA — convergence ========================= -->
-<section class="cta-section" id="cta">
-  <div class="cta-stage" id="cta-stage"></div>
-  <div class="cta-content reveal">
-    <div class="eyebrow" style="justify-content:center;">Get Started</div>
-    <h2 style="margin-top:18px;">Ready to build a better connection?</h2>
-    <p class="lead" style="margin-top:16px;">Talk to Kings Network Indonesia and find the connectivity solution that fits your needs.</p>
-    <div class="cta-actions">
-      <a href="#contact" class="btn btn-primary">Request a Quote <span class="btn-arrow">→</span></a>
-      <a href="#contact" class="btn btn-ghost">Contact Us</a>
-    </div>
-  </div>
-</section>
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="tentang">
+    <div class="container about-grid">
+      <div class="about-text">
+        <p class="eyebrow eyebrow-dark reveal-up"><span class="eyebrow-dot"></span>TENTANG KAMI</p>
+        <h2 class="section-title reveal-up">Dibangun untuk menghubungkan Indonesia, satu titik koneksi dalam satu waktu</h2>
+        <p class="section-lead reveal-up">KINGS, dioperasikan oleh PT Kings Network Indonesia, adalah penyedia layanan internet Indonesia yang tumbuh dari Jakarta dan Bekasi, dengan satu misi sederhana: menghadirkan konektivitas yang benar-benar bisa diandalkan. Bukan sekadar cepat di atas kertas, tapi stabil setiap hari, didukung tim lokal yang merespons cepat, dan dibangun di atas infrastruktur yang siap tumbuh bersama kebutuhan Anda.</p>
+        <p class="section-body reveal-up">Kami merancang jaringan fiber-optic terkelola yang scalable sejak awal — dari satu unit rumah tangga hingga jaringan enterprise multi-lokasi. Ke depan, peta jalan kami adalah memperluas konektivitas andal ini ke kota-kota utama di seluruh Pulau Jawa, sambil mempertahankan standar layanan yang sama di setiap titik baru.</p>
 
-<!-- ========================= CONTACT ========================= -->
-<section class="section" id="contact">
-  <div class="contact-wrap">
-    <div class="reveal">
-      <div class="eyebrow">Contact</div>
-      <h2 style="margin-bottom:28px;">Let's get you connected.</h2>
-      <form class="contact-form" id="contact-form">
-        <div class="form-grid">
-          <div class="form-field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" placeholder="Your full name" required></div>
-          <div class="form-field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" placeholder="Company name (optional)"></div>
-          <div class="form-field"><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" placeholder="+62 8xx xxxx xxxx" required></div>
-          <div class="form-field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" placeholder="you@company.com" required></div>
-          <div class="form-field full">
-            <label for="f-service">Service Needed</label>
-            <select id="f-service" name="service">
-              <option>Home Internet</option>
-              <option>Business Internet</option>
-              <option>Dedicated Internet</option>
-              <option>Enterprise Networking</option>
-              <option>Fiber Optic Connectivity</option>
-              <option>Managed Network</option>
-            </select>
-          </div>
-          <div class="form-field full"><label for="f-message">Message</label><textarea id="f-message" name="message" placeholder="Tell us about your connectivity needs"></textarea></div>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message <span class="btn-arrow">→</span></button>
-      </form>
-    </div>
-    <div class="reveal">
-      <div class="contact-info">
-        <div class="info-row">
-          <div class="ico">◎</div>
-          <div><div class="lab">Company Address</div><div class="val">[Address placeholder] Jakarta, Indonesia</div></div>
-        </div>
-        <div class="info-row">
-          <div class="ico">☎</div>
-          <div><div class="lab">Phone</div><div class="val">[Phone placeholder]</div></div>
-        </div>
-        <div class="info-row">
-          <div class="ico">✆</div>
-          <div><div class="lab">WhatsApp</div><div class="val">[WhatsApp placeholder]</div></div>
-        </div>
-        <div class="info-row">
-          <div class="ico">✉</div>
-          <div><div class="lab">Email</div><div class="val">[Email placeholder]</div></div>
-        </div>
-        <div class="info-row" style="border-bottom:none;">
-          <div class="ico">◷</div>
-          <div><div class="lab">Business Hours</div><div class="val">[Business hours placeholder]</div></div>
-        </div>
-        <div class="map-placeholder">Google Maps placeholder</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========================= FOOTER ========================= -->
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-brand">
-      <a href="#home" class="nav-logo"><img src="assets/logo.png" alt="Kings Network Indonesia logo"><span class="nav-logo-text">KINGS NETWORK<span>Indonesia</span></span></a>
-      <p>Connection Matters. Powering your future.</p>
-    </div>
-    <div class="footer-cols">
-      <div class="footer-col">
-        <h5>Site</h5>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#network">Network</a></li>
-          <li><a href="#coverage">Coverage</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="about-points reveal-up">
+          <li><span class="check-ico" aria-hidden="true"></span>Infrastruktur fiber-optic terkelola end-to-end</li>
+          <li><span class="check-ico" aria-hidden="true"></span>Tim support lokal di Jakarta &amp; Bekasi</li>
+          <li><span class="check-ico" aria-hidden="true"></span>Arsitektur jaringan siap skala ke seluruh Jawa</li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h5>Connect</h5>
-        <div class="social-row">
-          <a href="#" aria-label="Instagram">IG</a>
-          <a href="#" aria-label="LinkedIn">IN</a>
-          <a href="#" aria-label="Facebook">FB</a>
-          <a href="#" aria-label="WhatsApp">WA</a>
+
+      <div class="about-visual reveal-up">
+        <div class="glass-panel about-panel">
+          <div class="about-panel-row">
+            <svg viewBox="0 0 24 24" class="icon icon-lg" aria-hidden="true"><path d="M4 12a8 8 0 0 1 16 0" /><path d="M7.5 12a4.5 4.5 0 0 1 9 0" /><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><path d="M12 12v8" /></svg>
+            <div>
+              <strong>Uptime 99.9%</strong>
+              <span>Jaringan terpantau 24/7 oleh NOC internal</span>
+            </div>
+          </div>
+          <div class="about-panel-row">
+            <svg viewBox="0 0 24 24" class="icon icon-lg" aria-hidden="true"><path d="M3 11h3l2-6 4 14 2-9 2 5h5"/></svg>
+            <div>
+              <strong>Respons &lt; 15 menit</strong>
+              <span>Tim lokal siap membantu tanpa antre lama</span>
+            </div>
+          </div>
+          <div class="about-panel-row">
+            <svg viewBox="0 0 24 24" class="icon icon-lg" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-8h6v8"/></svg>
+            <div>
+              <strong>2 kota aktif, ekspansi berjalan</strong>
+              <span>Jakarta &amp; Bekasi hari ini, Jawa berikutnya</span>
+            </div>
+          </div>
+          <div class="about-panel-tag">
+            <span class="mono-tag">JAKARTA · 06.2088° S, 106.8456° E</span>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- ============ INTERNET SERVICES ============ -->
+  <section class="section section-alt" id="layanan">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-dark reveal-up"><span class="eyebrow-dot"></span>LAYANAN INTERNET</p>
+        <h2 class="section-title reveal-up">Satu jaringan, kebutuhan konektivitas yang berbeda-beda</h2>
+        <p class="section-lead reveal-up">Dari rumah tangga hingga enterprise multi-cabang, setiap layanan kami dibangun di atas fondasi yang sama: cepat, stabil, dan transparan.</p>
+      </div>
+
+      <div class="services-grid reveal-up">
+        <article class="service-card service-card-feature">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M3 11h3l2-6 4 14 2-9 2 5h5"/></svg>
+          </div>
+          <h3>Internet Fiber untuk Rumah</h3>
+          <p>Kecepatan tinggi dan koneksi stabil untuk streaming, kerja dari rumah, dan gaming, tanpa lag saat jam sibuk.</p>
+          <ul class="tag-list">
+            <li>Kecepatan simetris</li>
+            <li>Instalasi cepat</li>
+            <li>Harga transparan</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6"/></svg>
+          </div>
+          <h3>Internet untuk Bisnis &amp; SME</h3>
+          <p>Konektivitas andal yang menopang operasional harian toko, kantor, dan bisnis skala menengah Anda.</p>
+          <ul class="tag-list">
+            <li>SLA jelas</li>
+            <li>Dukungan prioritas</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M8 4v5"/></svg>
+          </div>
+          <h3>Dedicated Internet untuk Enterprise</h3>
+          <p>Bandwidth khusus dengan jaminan uptime tinggi untuk operasional bisnis skala besar dan kritikal.</p>
+          <ul class="tag-list">
+            <li>Bandwidth dedicated</li>
+            <li>Uptime terjamin</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M4 12a8 8 0 0 1 16 0"/><path d="M7.5 12a4.5 4.5 0 0 1 9 0"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <h3>Managed Wi-Fi</h3>
+          <p>Jaringan nirkabel yang dikelola penuh, memastikan cakupan merata di seluruh area properti Anda.</p>
+          <ul class="tag-list">
+            <li>Cakupan merata</li>
+            <li>Monitoring aktif</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="12" cy="18" r="2.4"/><path d="M8 7.3 10.5 16"/><path d="M16 7.3 13.5 16"/><path d="M8.3 6h7.4"/></svg>
+          </div>
+          <h3>Connectivity &amp; Network Solutions</h3>
+          <p>Rancang bangun jaringan kustom untuk kebutuhan multi-lokasi, integrasi sistem, dan skalabilitas jangka panjang.</p>
+          <ul class="tag-list">
+            <li>Desain kustom</li>
+            <li>Skalabel</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIGITAL SOLUTIONS ============ -->
+  <section class="section" id="solusi">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-dark reveal-up"><span class="eyebrow-dot"></span>SOLUSI DIGITAL</p>
+        <h2 class="section-title reveal-up">Lebih dari internet — dua produk yang mengubah pengalaman digital Anda</h2>
+        <p class="section-lead reveal-up">Dua solusi unggulan yang berjalan di atas jaringan andal KINGS, dirancang untuk properti, bisnis, dan institusi yang butuh lebih dari sekadar koneksi.</p>
+      </div>
+
+      <div class="solutions-grid">
+        <!-- IPTV -->
+        <article class="solution-card reveal-up">
+          <div class="solution-visual solution-visual-iptv" aria-hidden="true">
+            <div class="mock-tv mock-tv-1">
+              <div class="mock-tv-bar"></div>
+              <div class="mock-tv-tiles">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="mock-tv mock-tv-2">
+              <div class="mock-tv-play"></div>
+            </div>
+            <div class="mock-chip mock-chip-1">Live TV</div>
+            <div class="mock-chip mock-chip-2">On Demand</div>
+            <div class="mock-flow"></div>
+          </div>
+          <div class="solution-body">
+            <span class="solution-kicker">PRODUK 01</span>
+            <h3>IPTV Uniiq System</h3>
+            <p>Platform IPTV dan hiburan interaktif untuk hotel, apartemen, rumah sakit, kompleks residensial, dan bisnis — satu sistem, banyak layar.</p>
+            <ul class="feature-list-2col">
+              <li>Live TV dan Video on Demand</li>
+              <li>Centralized Content Management</li>
+              <li>Custom Branding</li>
+              <li>Interactive Guest Information</li>
+              <li>Multi-device Access</li>
+              <li>Reliable Streaming melalui Managed Network</li>
+            </ul>
+            <a href="#kontak" class="btn btn-outline">Explore IPTV Uniiq System</a>
+          </div>
+        </article>
+
+        <!-- KingsDDS -->
+        <article class="solution-card reveal-up">
+          <div class="solution-visual solution-visual-dds" aria-hidden="true">
+            <div class="mock-signage mock-signage-1">
+              <div class="mock-signage-header"></div>
+              <div class="mock-signage-body">
+                <span></span><span></span>
+              </div>
+            </div>
+            <div class="mock-signage mock-signage-2">
+              <div class="mock-signage-chart">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+            <div class="mock-chip mock-chip-3">Live</div>
+            <div class="mock-chip mock-chip-4">3 Layar Aktif</div>
+            <div class="mock-flow mock-flow-alt"></div>
+          </div>
+          <div class="solution-body">
+            <span class="solution-kicker">PRODUK 02</span>
+            <h3>KingsDDS Digital Signage</h3>
+            <p>Platform digital signage dan komunikasi visual terpusat untuk retail, kantor, hotel, restoran, sekolah, rumah sakit, transportasi, hingga kawasan properti.</p>
+            <ul class="feature-list-2col">
+              <li>Centralized Content Management</li>
+              <li>Remote Screen Control</li>
+              <li>Scheduled Campaigns</li>
+              <li>Real-time Announcements</li>
+              <li>Multi-location Deployment</li>
+              <li>Customizable Layouts</li>
+              <li>Video, Image, dan Multimedia Support</li>
+              <li>Analytics-ready Communication</li>
+            </ul>
+            <a href="#kontak" class="btn btn-outline">Discover KingsDDS</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COVERAGE AREA ============ -->
+  <section class="section section-alt" id="cakupan">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-dark reveal-up"><span class="eyebrow-dot"></span>CAKUPAN AREA</p>
+        <h2 class="section-title reveal-up">Aktif di Jakarta dan Bekasi, merambat ke seluruh Jawa</h2>
+        <p class="section-lead reveal-up">Lihat area aktif kami hari ini, dan titik-titik yang masuk dalam peta ekspansi berikutnya.</p>
+      </div>
+
+      <div class="coverage-grid">
+        <div class="coverage-map-wrap reveal-up">
+          <div class="glass-panel coverage-map-panel">
+            <svg viewBox="0 0 760 300" class="java-map" role="img" aria-label="Peta cakupan Pulau Jawa: Jakarta dan Bekasi aktif, Bandung, Semarang, Yogyakarta, dan Surabaya dalam rencana ekspansi">
+              <path class="java-shape" d="M20 190 C 60 150, 90 210, 140 175 C 180 150, 210 190, 260 170 C 310 150, 330 195, 380 180 C 430 165, 450 200, 500 185 C 550 170, 580 205, 630 190 C 670 178, 700 200, 738 185 L 742 210 C 700 225, 660 215, 620 222 C 570 232, 540 210, 490 220 C 440 230, 410 210, 360 215 C 310 220, 280 200, 230 210 C 180 220, 150 200, 110 215 C 75 227, 40 218, 20 210 Z"/>
+
+              <!-- expansion lines -->
+              <g class="route-lines">
+                <path class="route-line" d="M120 195 C 220 150, 280 195, 330 205"/>
+                <path class="route-line" d="M150 200 C 320 130, 420 175, 470 195"/>
+                <path class="route-line" d="M150 200 C 380 120, 560 165, 640 198"/>
+              </g>
+
+              <!-- Bandung -->
+              <g class="map-node map-node-planned" transform="translate(330,205)">
+                <circle r="12" class="node-pulse"/>
+                <circle r="5" class="node-dot"/>
+                <text x="0" y="-16" class="node-label">Bandung</text>
+                <text x="0" y="28" class="node-status">Segera</text>
+              </g>
+              <!-- Yogyakarta -->
+              <g class="map-node map-node-planned" transform="translate(470,195)">
+                <circle r="12" class="node-pulse"/>
+                <circle r="5" class="node-dot"/>
+                <text x="0" y="-16" class="node-label">Yogyakarta</text>
+                <text x="0" y="28" class="node-status">Direncanakan</text>
+              </g>
+              <!-- Surabaya -->
+              <g class="map-node map-node-planned" transform="translate(640,198)">
+                <circle r="12" class="node-pulse"/>
+                <circle r="5" class="node-dot"/>
+                <text x="0" y="-16" class="node-label">Surabaya</text>
+                <text x="0" y="28" class="node-status">Direncanakan</text>
+              </g>
+
+              <!-- Bekasi -->
+              <g class="map-node map-node-active" transform="translate(150,200)">
+                <circle r="14" class="node-pulse-active"/>
+                <circle r="6" class="node-dot-active"/>
+                <text x="0" y="-18" class="node-label node-label-active">Bekasi</text>
+                <text x="0" y="30" class="node-status node-status-active">Aktif</text>
+              </g>
+              <!-- Jakarta -->
+              <g class="map-node map-node-active" transform="translate(120,195)">
+                <circle r="16" class="node-pulse-active"/>
+                <circle r="7" class="node-dot-active"/>
+                <text x="0" y="-20" class="node-label node-label-active">Jakarta</text>
+                <text x="0" y="32" class="node-status node-status-active">Aktif</text>
+              </g>
+            </svg>
+            <div class="map-legend">
+              <span><i class="legend-dot legend-dot-active"></i>Aktif sekarang</span>
+              <span><i class="legend-dot legend-dot-planned"></i>Peta ekspansi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="coverage-side reveal-up">
+          <div class="coverage-check glass-panel">
+            <h3>Cek Ketersediaan di Lokasi Anda</h3>
+            <p>Masukkan alamat atau kode pos, tim kami akan memastikan status jaringan di area Anda.</p>
+            <form class="coverage-form" id="coverageForm" novalidate>
+              <label for="coverageInput" class="sr-only">Alamat atau kode pos</label>
+              <input type="text" id="coverageInput" name="coverageInput" placeholder="Contoh: Kemang, Jakarta Selatan / 17141" required>
+              <button type="submit" class="btn btn-primary">Cek Sekarang</button>
+            </form>
+            <p class="coverage-result" id="coverageResult" role="status" aria-live="polite"></p>
+          </div>
+
+          <ul class="coverage-roadmap">
+            <li><span class="rm-status rm-active">Aktif</span> Jakarta &amp; Bekasi</li>
+            <li><span class="rm-status rm-planned">Tahap berikutnya</span> Bandung &amp; Yogyakarta</li>
+            <li><span class="rm-status rm-planned">Direncanakan</span> Semarang &amp; Surabaya</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="section" id="mengapa">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-dark reveal-up"><span class="eyebrow-dot"></span>MENGAPA KINGS</p>
+        <h2 class="section-title reveal-up">Alasan bisnis dan properti mempercayakan konektivitas mereka pada kami</h2>
+      </div>
+
+      <div class="why-grid reveal-up">
+        <div class="why-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+          <h3>Koneksi Cepat dan Stabil</h3>
+          <p>Performa konsisten setiap saat, bukan hanya di atas kertas.</p>
+        </div>
+        <div class="why-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+          <h3>Dukungan Tim Lokal yang Responsif</h3>
+          <p>Tim Jakarta &amp; Bekasi yang memahami kondisi lapangan Anda.</p>
+        </div>
+        <div class="why-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M4 17V7l8-4 8 4v10l-8 4-8-4Z"/><path d="M4 7l8 4 8-4"/><path d="M12 11v10"/></svg>
+          <h3>Solusi Mudah Dikembangkan</h3>
+          <p>Skalakan bandwidth dan layanan seiring pertumbuhan bisnis Anda.</p>
+        </div>
+        <div class="why-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><rect x="4" y="9" width="4" height="11"/><rect x="10" y="5" width="4" height="15"/><rect x="16" y="12" width="4" height="8"/></svg>
+          <h3>Infrastruktur Siap Masa Depan</h3>
+          <p>Dibangun untuk mendukung kebutuhan digital Anda hari ini dan nanti.</p>
+        </div>
+        <div class="why-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 3 4 7v6c0 4.5 3.4 7.7 8 8 4.6-.3 8-3.5 8-8V7l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <h3>Layanan Transparan dan Andal</h3>
+          <p>Tanpa biaya tersembunyi, tanpa janji yang tidak bisa ditepati.</p>
+        </div>
+        <div class="why-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18"/><path d="M3 12h18"/></svg>
+          <h3>Internet &amp; Solusi Digital dalam Satu Partner</h3>
+          <p>Konektivitas, IPTV, dan digital signage — satu mitra, satu tanggung jawab.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INDUSTRIES ============ -->
+  <section class="section section-alt" id="industri">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-dark reveal-up"><span class="eyebrow-dot"></span>INDUSTRI YANG KAMI LAYANI</p>
+        <h2 class="section-title reveal-up">Dipercaya lintas sektor, dari hunian hingga ruang publik</h2>
+      </div>
+
+      <div class="industry-grid reveal-up">
+        <div class="industry-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-8h6v8"/></svg>
+          <span>Residential &amp; Apartemen</span>
+        </div>
+        <div class="industry-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h.01M9 12h.01M9 16h.01M15 8h.01M15 12h.01M15 16h.01"/></svg>
+          <span>Office &amp; Enterprise</span>
+        </div>
+        <div class="industry-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M3 9 5 4h14l2 5"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg>
+          <span>Retail</span>
+        </div>
+        <div class="industry-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M3 21V10l9-7 9 7v11"/><path d="M9 21v-5a3 3 0 0 1 6 0v5"/></svg>
+          <span>Hospitality</span>
+        </div>
+        <div class="industry-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M2 9 12 4l10 5-10 5-10-5Z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+          <span>Education</span>
+        </div>
+        <div class="industry-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M4.5 12.5 12 20l7.5-7.5a4.6 4.6 0 0 0-7-6L12 7l-.5-.5a4.6 4.6 0 0 0-7 6Z"/><path d="M8 12h2l1.5-3L13 15l1.5-3H16"/></svg>
+          <span>Healthcare</span>
+        </div>
+        <div class="industry-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M10 21v-6h4v6"/></svg>
+          <span>Property Developers</span>
+        </div>
+        <div class="industry-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/><path d="M3 12h18"/></svg>
+          <span>Public Spaces</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section" id="testimoni">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-dark reveal-up"><span class="eyebrow-dot"></span>TESTIMONI</p>
+        <h2 class="section-title reveal-up">Dipercaya oleh tim yang mengandalkan konektivitas setiap hari</h2>
+      </div>
+
+      <div class="testimonial-carousel reveal-up">
+        <div class="testimonial-track" id="testimonialTrack">
+          <blockquote class="testimonial-card">
+            <p>"Sejak migrasi ke KINGS, downtime internet kantor kami nyaris tidak ada. Tim supportnya juga selalu sigap ketika dibutuhkan."</p>
+            <footer><strong>Manajer Operasional</strong><span>Perusahaan Retail, Bekasi</span></footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p>"IPTV Uniiq System mengubah pengalaman tamu di properti kami — konten terpusat, brand kami sendiri, dan streaming yang stabil."</p>
+            <footer><strong>General Manager</strong><span>Grup Hospitality, Jakarta</span></footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p>"KingsDDS memudahkan kami mengelola konten di puluhan layar dari satu dashboard, tanpa perlu tim IT besar."</p>
+            <footer><strong>Kepala Marketing</strong><span>Jaringan Retail Nasional</span></footer>
+          </blockquote>
+        </div>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+      </div>
+
+      <div class="trusted-by">
+        <p class="trusted-by-label">Dipercaya oleh berbagai sektor</p>
+        <div class="trusted-logos">
+          <span>Grup Hospitality</span>
+          <span>Kawasan Properti</span>
+          <span>Jaringan Retail</span>
+          <span>Rumah Sakit Mitra</span>
+          <span>Kampus &amp; Sekolah</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-contact" id="kontak">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-up">
+          <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span>KONTAK</p>
+          <h2 class="section-title">Siap Terhubung dengan Masa Depan?</h2>
+          <p class="section-lead">Hubungi tim kami untuk konsultasi gratis, atau kirim permintaan langsung melalui formulir.</p>
+
+          <div class="contact-cards">
+            <div class="contact-card">
+              <span class="contact-card-title">Kantor Jakarta</span>
+              <span>Melayani area Jakarta &amp; sekitarnya</span>
+            </div>
+            <div class="contact-card">
+              <span class="contact-card-title">Kantor Bekasi</span>
+              <span>Melayani area Bekasi &amp; sekitarnya</span>
+            </div>
+          </div>
+
+          <div class="contact-links">
+            <a href="https://wa.me/6280000000000" class="btn btn-primary" target="_blank" rel="noopener">Chat via WhatsApp</a>
+            <a href="mailto:halo@kings.co.id" class="contact-link-item">halo@kings.co.id</a>
+          </div>
+
+          <div class="social-row" aria-label="Media sosial KINGS">
+            <a href="#" aria-label="Instagram KINGS" class="social-ico">IG</a>
+            <a href="#" aria-label="LinkedIn KINGS" class="social-ico">in</a>
+            <a href="#" aria-label="Facebook KINGS" class="social-ico">FB</a>
+            <a href="#" aria-label="X / Twitter KINGS" class="social-ico">X</a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-panel reveal-up" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="company">Perusahaan / Properti</label>
+              <input type="text" id="company" name="company" autocomplete="organization">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="phone">No. WhatsApp</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel">
+            </div>
+          </div>
+          <div class="field">
+            <label for="need">Kebutuhan</label>
+            <select id="need" name="need">
+              <option value="rumah">Internet untuk Rumah</option>
+              <option value="bisnis">Internet untuk Bisnis / SME</option>
+              <option value="enterprise">Dedicated Internet Enterprise</option>
+              <option value="iptv">IPTV Uniiq System</option>
+              <option value="dds">KingsDDS Digital Signage</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" placeholder="Ceritakan kebutuhan konektivitas Anda..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Kirim Permintaan</button>
+          <p class="form-result" id="formResult" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#beranda" class="nav-logo footer-logo">
+        <img src="assets/images/logo.png" alt="KINGS" width="30" height="30">
+        <span>KINGS</span>
+      </a>
+      <p>Konektivitas fiber dan solusi digital untuk Indonesia.</p>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram KINGS" class="social-ico">IG</a>
+        <a href="#" aria-label="LinkedIn KINGS" class="social-ico">in</a>
+        <a href="#" aria-label="Facebook KINGS" class="social-ico">FB</a>
+        <a href="#" aria-label="X / Twitter KINGS" class="social-ico">X</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigasi</h4>
+      <a href="#tentang">Tentang Kami</a>
+      <a href="#layanan">Layanan Internet</a>
+      <a href="#solusi">Solusi Digital</a>
+      <a href="#cakupan">Cakupan Area</a>
+      <a href="#industri">Industri</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Layanan</h4>
+      <a href="#layanan">Internet Fiber Rumah</a>
+      <a href="#layanan">Internet Bisnis &amp; SME</a>
+      <a href="#layanan">Dedicated Enterprise</a>
+      <a href="#layanan">Managed Wi-Fi</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Solusi Digital</h4>
+      <a href="#solusi">IPTV Uniiq System</a>
+      <a href="#solusi">KingsDDS</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Kontak</h4>
+      <a href="mailto:halo@kings.co.id">halo@kings.co.id</a>
+      <a href="https://wa.me/6280000000000" target="_blank" rel="noopener">WhatsApp</a>
+      <span class="footer-static">Jakarta &amp; Bekasi, Indonesia</span>
+    </div>
   </div>
-  <div class="footer-bottom">
-    <span>© <span id="year"></span> PT. Kings Network Indonesia. All rights reserved.</span>
-    <span>Jakarta &amp; Java Island Network</span>
+
+  <div class="footer-bottom container">
+    <span>&copy; 2026 PT Kings Network Indonesia. Seluruh hak cipta dilindungi.</span>
+    <div class="footer-legal">
+      <a href="#">Kebijakan Privasi</a>
+      <a href="#">Syarat &amp; Ketentuan</a>
+    </div>
   </div>
 </footer>
 
-<script type="module" src="js/coverage-data.js"></script>
-<script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script type="module" src="js/hero-network.js"></script>
-<script type="module" src="js/java-map.js"></script>
-<script type="module" src="js/infrastructure.js"></script>
-<script type="module" src="js/animations.js"></script>
-<script type="module" src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/three-scene.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
