@@ -171,51 +171,7 @@
     resetTimer();
   }
 
-  /* ---------------------------------------------------------
-     Coverage-check form (client-side demo interaction)
-  --------------------------------------------------------- */
-  var coverageForm = document.getElementById('coverageForm');
-  var coverageResult = document.getElementById('coverageResult');
-  if (coverageForm) {
-    coverageForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var value = document.getElementById('coverageInput').value.trim();
-      if (!value) {
-        coverageResult.textContent = 'Masukkan alamat atau kode pos terlebih dahulu.';
-        return;
-      }
-      var lower = value.toLowerCase();
-      var isCovered = lower.indexOf('jakarta') !== -1 || lower.indexOf('bekasi') !== -1;
-      coverageResult.textContent = isCovered
-        ? 'Kabar baik — area "' + value + '" berada dalam jangkauan aktif kami. Lanjutkan ke formulir kontak untuk pemasangan.'
-        : 'Area "' + value + '" belum aktif, namun masuk dalam peta ekspansi kami. Tim akan menghubungi Anda saat tersedia — isi formulir kontak untuk mendaftar prioritas.';
-      var needSelect = document.getElementById('need');
-      window.setTimeout(function () {
-        document.getElementById('kontak').scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth' });
-        document.getElementById('name').focus({ preventScroll: true });
-      }, 900);
-    });
-  }
 
-  /* ---------------------------------------------------------
-     Contact form (client-side validation demo)
-  --------------------------------------------------------- */
-  var contactForm = document.getElementById('contactForm');
-  var formResult = document.getElementById('formResult');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!contactForm.checkValidity()) {
-        formResult.style.color = '#DC2626';
-        formResult.textContent = 'Mohon lengkapi kolom yang wajib diisi.';
-        return;
-      }
-      var name = document.getElementById('name').value.trim();
-      formResult.style.color = '';
-      formResult.textContent = 'Terima kasih, ' + name + '! Tim KINGS akan menghubungi Anda segera.';
-      contactForm.reset();
-    });
-  }
 
   /* ---------------------------------------------------------
      Smooth-scroll offset correction for fixed nav

@@ -214,7 +214,7 @@ h1,h2,h3,h4{
   font-size:1.15rem;
   letter-spacing:.02em;
 }
-.nav-logo img{border-radius:6px;}
+.nav-logo img{border-radius:0;}
 
 .nav-menu{
   display:flex;align-items:center;gap:2rem;
@@ -281,6 +281,14 @@ h1,h2,h3,h4{
 .hero-title{
   font-size:clamp(2.2rem,5.6vw,4.4rem);
   line-height:1.08;
+  max-width:960px;
+  margin-bottom:.2rem;
+}
+.hero-subtitle{
+  font-size:clamp(2rem,5.2vw,4rem);
+  line-height:1.08;
+  font-family:var(--font-display);
+  font-weight:700;
   max-width:960px;
   margin-bottom:1.3rem;
 }
