@@ -723,9 +723,6 @@ h1,h2,h3,h4{
   padding:1.6rem clamp(1.25rem,4vw,2.5rem) 2rem;
   font-size:.8rem;color:#7286A3;
 }
-.footer-legal{display:flex;gap:1.4rem;}
-.footer-legal a{color:#7286A3;}
-.footer-legal a:hover{color:#fff;}
 
 /* =========================================================
    Responsive
